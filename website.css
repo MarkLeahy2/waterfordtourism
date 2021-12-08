@@ -1,0 +1,359 @@
+html, body {
+ margin:0;
+ padding:0;
+ width:100%;
+ height:100%;
+}
+
+
+#google_translate_element{
+margin-top:2px;
+
+}
+
+
+
+
+
+
+/*all the buttons*/
+#more1,
+#more2,
+#more3,
+#more4,
+#more5,
+#more6,
+#more7,
+#more8,
+#more9,
+#more10,
+#more11,
+#more12,
+#more13 {
+  display: none;
+  margin-top: 1em;
+  transform: scale(0);
+  transition: 3s ease transform;
+}
+
+/* Slideshow images rounded corners*/
+
+.border{
+	
+border-radius:30px;	
+		
+}
+
+
+.header.item{
+font-size:22px;	
+	
+}
+
+h1{
+	font-size:44px;
+	text-align:center;
+	font-family:verdana,arial;
+	text-decoration:bold;
+	text-shadow: 0px 15px 5px rgba(0,0,0,0.1),
+                 10px 20px 5px rgba(0,0,0,0.05),
+                 -10px 20px 5px rgba(0,0,0,0.05);
+	color:#000080;
+
+	
+	
+}
+
+h2{
+	font-size:30px;
+	text-align:center;
+	font-family:verdana,arial;
+	padding-top:5px;
+	text-shadow: 0px 15px 5px rgba(0,0,0,0.1),
+                 10px 20px 5px rgba(0,0,0,0.05),
+                 -10px 20px 5px rgba(0,0,0,0.05);
+	color:#4682B4;
+	
+	
+}
+
+
+p{
+	font-size:21px;
+	margin-left:1em;
+	font-family:verdana,arial;
+	
+	
+}
+
+
+
+section{
+margin:15em 5em;	
+	
+	
+	
+}
+
+
+.ui.icon.input{
+margin-top:20px;
+margin-bottom:5px;	
+margin-right:20px;
+	
+	
+}
+
+
+.navbar {
+  height:80px;
+  overflow: hidden;
+  background-color: #000080;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom:20px;
+  
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 20px 25px;
+  text-decoration: none;
+  margin-top:10px;
+}
+
+.item. {
+  background-color:white;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+  margin-top:8px;
+}
+
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 25px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 18px 5px;
+  background-color: inherit;
+  font-family: inherit;
+  margin-left: 40px;
+  margin-right:40px;
+}
+
+.navbar a:hover,a:active .dropdown:hover .dropbtn, .dropbtn:focus {
+  background-color:#4682B4;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color:  #89CFF0;
+}
+
+.show {
+  display: block;
+}
+
+
+/*SLIDESHOW*/
+
+
+.slideshow-container {
+  max-width: 1450px;
+  max-height: 500px;
+  position: relative;
+  margin-top: 5em;
+  margin-left:3em;
+}
+
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #add8e6;
+  font-size: 140px;
+  padding: 2px 2px;
+  position: absolute;
+  bottom:-0.5em;
+  width: 100%;
+  text-align: center;
+  font-family:verdana,arial;
+  text-shadow: 0 1px 0 #ccc, 
+               0 2px 0 #ffffff,
+               0 3px 0 #ffffff,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+ 
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.active, .dot:hover {
+  background-color: #4682B4;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.ui.vertical.footer.segment
+{
+background-color:#213ab8;
+text-align:center;
+}
+
+
+.textFooter{
+float:center;
+font-size:10px;	
+	
+}
+
+.white{
+color:white;	
+		
+}
+
+
+/* form*/
+
+.ui.form {
+      border: 5px solid #f1f1f1;
+	  width:50%;
+	  margin-left:25em;
+      }
+      input[type=text1] {
+      width: 100%;
+      padding: 16px 8px;
+      margin: 8px 0px;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      }
+      .icon {
+      font-size: 110px;
+      display: flex;
+      justify-content: center;
+      color: #4286f4;
+	  margin-top:0.5em;
+      }
+      .button1 {
+      background-color: #4286f4;
+      color: white;
+      padding: 14px 0;
+      margin-left: 100em;
+      border-radius: 12px;
+      cursor: grab;
+      width: 25%;
+      }
+      h1 {
+      text-align:center;
+      font-size:18;
+      }
+      button:hover {
+      opacity: 0.8;
+      }
+      .formcontainer {
+      text-align: left;
+      margin: 24px 30px 12px 20px;
+      }
+      .container {
+      padding: 16px 0;
+      text-align:left;
+      }
+      
+      /* Change styles for span on extra small screens */
+      @media screen and (max-width: 300px) {
+      span.psw {
+      display: block;
+      float: none;
+	  }
+
+
+main
+{
+    display: flex;
+	padding-top:20px;
+    margin-top:20em;
+	
+}
+
